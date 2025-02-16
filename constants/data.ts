@@ -1,10 +1,10 @@
 import icons from "./icons";
 
 export const categories = [
-    {
-        title: "Fast Food",
-        icon: require("../assets/images/categories/fast-food.png")
-    },
+    // {
+    //     title: "Fast Food",
+    //     icon: require("../assets/images/categories/fast-food.png")
+    // },
     {
         title: "Drinks",
         icon: require("../assets/images/categories/drinks.png")
@@ -31,33 +31,36 @@ export const categories = [
     },
 ]
 
-{/* Container for search container and filter  
-<View className='flex-row  items-center     '>
+export const restaurants = [
 
-        {/* Containerfor search container */}
-        // <View className='  px-3  flex-row   rounded-2xl  border  items-center   gap-20 '>
-        //      {/* Containe for glasses */}
-        //     <View>
-        //     <Entypo name="magnifying-glass" size={24} color="black" />
-        //     </View>
+    {
+        name: "Big Bite",
+        image: require("../assets/images/restaurants/al-baik.jpg"),
+        star: 4,
+        type: "Veg",
+        location: "123 main street",
+    },
+    {
+        name: "Big Bite",
+        image: require("../assets/images/restaurants/al-baik.jpg"),
+        star: 4,
+        type: "Veg",
+        location: "123 main street",
+    },
+    {
+        name: "Big Bite",
+        image: require("../assets/images/restaurants/al-baik.jpg"),
+        star: 4,
+        type: "Veg",
+        location: "123 main street",
+    },
+    {
+        name: "Big Bite",
+        image: require("../assets/images/restaurants/al-baik.jpg"),
+        star: 4,
+        type: "Veg",
+        location: "123 main street",
+    },
+  
+]
 
-        //      {/* Containe for input */}
-        //     <View>
-        //    <TextInput 
-        //    placeholder='Hotels'
-           
-        //    />
-        //     </View>
-
-{/* Containe for Place*/} 
-//             <View>
-//    <Text>New York</Text>
-//             </View>
-
-//         </View>
-
-// {/* COntainer for filter */}
-// <View className=' border rounded-full ml-3  p-2 bg-primary'>
-// <Ionicons name="filter-sharp" size={24} color="white" />
-// </View>
-//         </View>

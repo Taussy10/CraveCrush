@@ -13,7 +13,7 @@ module.exports = {
   "p-regular-400": "Poppins_400Regular",
   "p-medium-500": "Poppins_700Bold",
   "p-bold-700": "Poppins_700Bold",
-  "p-extra-bold-700": "Poppins_800ExtraBold",
+  "p-extra-bold-800": "Poppins_800ExtraBold",
   },
     }
   },

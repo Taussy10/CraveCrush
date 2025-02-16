@@ -1,0 +1,3 @@
+Always know dimension of Image: otherwise it will take whole screen 
+height and you will think why this Flatlist is taking whole screen height 
+when the problem is due to Image ...lol
