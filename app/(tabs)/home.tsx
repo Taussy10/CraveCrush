@@ -38,9 +38,9 @@ const Home = () => {
         console.log("Item from main render",item);
         return(
           // Container for card
-          <View>
+          <View >
             {/* Header */}
-            <View className=' flex-row  items-center justify-between'>
+            <View className=' mb-5 flex-row  items-center justify-between'>
 
 {/* For left */}
 <View className=' '>

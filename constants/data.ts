@@ -63,4 +63,22 @@ export const restaurants = [
     },
   
 ]
+export const restaurantsDetals = [
+
+    {
+        name: "Big Bite",
+        intro: "All kind of fast food available",
+        image: require("../assets/images/restaurants/al-baik.jpg"),
+        star: 4,
+        review: "4.6k review",
+        type: "Veg",
+        address: "123 main street",
+        foodItems: [{
+            image: require("../assets/images/restaurants/al-baik.jpg"),
+            name: "Spicy Italian Pasta",
+            price: 6,
+        },]
+    },
+  
+]
 
