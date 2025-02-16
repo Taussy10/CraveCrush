@@ -4,37 +4,42 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import {Entypo ,Ionicons} from '@expo/vector-icons/';
 import { categories } from '~/constants/data';
 
+
+
 const Home = () => {
   return (
-    <SafeAreaView className=' flex-1 px-4 pt-6 '>
-
-
-
-
-
-
-
-
-<FlatList 
-data={categories}
-horizontal
-
-renderItem={({item}) => {
-    console.log(item);
-    
-    return(
-        <View className=' mt-5 ml-4  h-20 bg-orange-500'>
-        <View className='  bg-green-500  size-14 p-2 border rounded-full  items-center justify-center flex-row'>
-   <Image source={item.icon} 
-     className=' size-12'
-     />
-</View>
-<Text>{item.title}</Text>
-</View>
-    )
-}} />
-
+    <SafeAreaView className=' flex-1 px-4'>
       <Text>Home</Text>
+      <FlatList 
+      data={[1]}
+      // may be it happens due to first one  should always be vertical
+      ListHeaderComponent={
+      <View>
+     <FlatList 
+     data={categories}
+     horizontal
+     renderItem={({item})=> {
+      console.log(item);
+      return(
+        <View>
+          <Image source={item.icon} className=' size-20' />
+          <Text>{item.title}</Text>
+        </View>
+
+      )
+    }}
+     />
+      </View>}
+      renderItem={({item})=> {
+        console.log("Item from main render",item);
+        return(
+          <View>
+            <Text>Hello</Text>
+          </View>
+
+        )
+      }}
+      />
     </SafeAreaView>
   )
 }
