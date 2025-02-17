@@ -84,15 +84,16 @@ const Details = () => {
 
 {/*  */}
 <TouchableOpacity  
-style={{ position: 'sticky', top: 0,}}
-className='   rounded-2xl flex-row items-center justify-between p-4   w-44 bg-orange-500'>
-{/* For total items  */}
-<View className=' bg-green-500 rounded-full'>
-    <Text>2</Text>
+style={{ position: 'absolute', bottom: 20, left: 50,}}
+className='   rounded-2xl flex-row items-center justify-between p-4   w-72 bg-orange-500'>
 
+{/* For total items  */}
+<View className=' p-2 bg-orange-300  rounded-3xl  size-10 items-center justify-center'>
+    <Text className=' text-white font-p-medium-500 text-xl'>2</Text>
 </View>
-<Text className=' text-white font-p-regular-400 '>View Cart</Text>
-<Text>$32</Text>
+
+<Text className=' text-white  font-p-medium-500 text-base '>View Cart</Text>
+<Text className='text-white font-p-medium-500 text-xl'>$32</Text>
 </TouchableOpacity>
 
     </SafeAreaView>
