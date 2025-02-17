@@ -1,0 +1,13 @@
+ [
+    {
+        "$collectionId": "67b36e460027ef635edb",
+        "$createdAt": "2025-02-17T17:17:28.372+00:00",
+        "$databaseId": "67b355e900296cf017d1",
+        "$id": "67b36f2e003c66975bd5",
+        "$permissions": [],
+        "$updatedAt": "2025-02-17T17:18:26.182+00:00",
+        "icon": "https://cloud.appwrite.io/v1/storage/buckets/67b36dab00176c5a1cca/files/67b36dde001ce68fc0b6/view?project=67aa2b4f00327f7e88ab&mode=admin",
+        "name": "Lemon Juice",
+        "price": 2
+    }
+]

@@ -1,17 +1,34 @@
-import { FlatList, Image, StatusBar, StyleSheet, Text, TextInput, View } from 'react-native'
-import React from 'react'
+import { Button, FlatList, Image, StatusBar, StyleSheet, Text, TextInput, View } from 'react-native'
+import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import {Entypo ,Ionicons} from '@expo/vector-icons/';
 import { categories, restaurants } from '~/constants/data';
 import Card from '~/components/home/card';
 import SearchBar from '~/components/home/search-bar';
-
+import { listFoodCategoriesItems } from '~/appwrite/appwrite';
+import { useEffect } from 'react';
 
 
 const Home = () => {
+  const [data, setData] = useState([])
+
+ useEffect(() => {
+  const fetchData = async() => {
+    const result = await listFoodCategoriesItems()
+    setData(result)
+  }
+  fetchData()
+ }, [])
+ 
+ console.log("Data from home.tsx: ", data);
+ 
+
+  
+
   return (
     <SafeAreaView className=' flex-1 px-4'>
       <StatusBar barStyle={"light-content"} />
+      
       <FlatList 
       data={[1]}
       // may be it happens due to first one  should always be vertical
@@ -23,7 +40,7 @@ const Home = () => {
      horizontal
     showsHorizontalScrollIndicator={false}
      renderItem={({item})=> {
-      console.log(item);
+      // console.log(item);
       return(
         <View className=' flex-col gap-1 mb-6 '>
         <View className=' border  mr-3 p-1 rounded-full  '>
@@ -37,7 +54,7 @@ const Home = () => {
      />
       </View>}
       renderItem={({item})=> {
-        console.log("Item from main render",item);
+        // console.log("Item from main render",item);
         return(
           // Container for card
           <View >

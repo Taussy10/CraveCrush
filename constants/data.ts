@@ -15,15 +15,15 @@ export const categories = [
     },
     {
         title: "Non Veg",
-        icon: require("../assets/images/categories/non-veg.png")
+        icon: require("../assets/images/categories/sea-food.png")
     },
     {
         title: "Veg",
-        icon: require("../assets/images/categories/burger.png")
+        icon: require("../assets/images/categories/fast-food.png")
     },
     {
         title: "Veg",
-        icon: require("../assets/images/categories/burger.png")
+        icon: require("../assets/images/categories/fast-food.png")
     },
     {
         title: "Veg",
