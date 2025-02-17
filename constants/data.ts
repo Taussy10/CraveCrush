@@ -63,6 +63,10 @@ export const restaurants = [
     },
   
 ]
+
+
+// in Restaurant details also add: How much time it will take to deliver the order
+// will add this in cart screen.
 export const restaurantsDetals = [
 
     {
