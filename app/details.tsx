@@ -2,6 +2,7 @@ import { Image, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import  { FontAwesome , EvilIcons , AntDesign} from "@expo/vector-icons"
+import { router } from 'expo-router'
 
 const Details = () => {
   return (
@@ -16,7 +17,7 @@ const Details = () => {
         </View>
 
         {/* For Food items and details */}
-        <View style={{elevation: 1}} className='   p-4 rounded-tl-3xl rounded-tr-3xl '>
+        <View className='   p-4 rounded-tl-3xl rounded-tr-3xl '>
 
 
             {/* Restaurants Detail */}
@@ -84,8 +85,10 @@ const Details = () => {
 
 {/*  */}
 <TouchableOpacity  
-style={{ position: 'absolute', bottom: 20, left: 50,}}
-className='   rounded-2xl flex-row items-center justify-between p-4   w-72 bg-orange-500'>
+activeOpacity={0.8}
+onPress={()=>router.push("/cart")}
+style={{ position: 'absolute', bottom: 20, left: 30,}}
+className='   rounded-3xl flex-row items-center justify-between px-4 py-2  w-[300px] bg-orange-500'>
 
 {/* For total items  */}
 <View className=' p-2 bg-orange-300  rounded-3xl  size-10 items-center justify-center'>

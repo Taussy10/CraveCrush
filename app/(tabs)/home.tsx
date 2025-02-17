@@ -3,7 +3,8 @@ import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import {Entypo ,Ionicons} from '@expo/vector-icons/';
 import { categories, restaurants } from '~/constants/data';
-import Card from '~/components/card';
+import Card from '~/components/home/card';
+import SearchBar from '~/components/home/search-bar';
 
 
 
@@ -16,6 +17,7 @@ const Home = () => {
       // may be it happens due to first one  should always be vertical
       ListHeaderComponent={
       <View>
+      <SearchBar />
      <FlatList 
      data={categories}
      horizontal

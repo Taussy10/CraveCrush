@@ -27,7 +27,7 @@ export const categories = [
     },
     {
         title: "Veg",
-        icon: require("../assets/images/categories/burger.png")
+        icon: require("../assets/images/categories/veg.png")
     },
 ]
 

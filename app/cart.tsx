@@ -5,20 +5,19 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 
 const Cart = () => {
   return (
-    <SafeAreaView className=' flex-1 pt-36'>
+    <SafeAreaView className=' flex-1 '>
       {/* Top navigtion and title  */}
 
-<View className=' flex-row   gap-60'>
-  <View className='  bg-primary rounded-full p-2 size-10 flex-row justify-center items-center'>
+{/*  items-center  gap-80  bg-green-500 */}
+<View className=' flex-row    pb-6  pt-4  mx-4'>
+  <View className=' mr-28  bg-primary rounded-full p-2 size-10 flex-row justify-center items-center'>
 <Ionicons name="arrow-back-outline" size={24} color="white" />
   </View>
-
-  <View className=' flex-col'>
-    <Text>Your Cart</Text>
-    <Text>Papa Johns</Text>
+  <View className=' flex-col '>
+    <Text className=' text-xl  font-p-bold-700'>Your Cart</Text>
+    <Text className='  text-base  font-p-regular-400 text-gray-600'>Papa Johns</Text>
   </View>
 </View>
-
 
 {/* <View>
 <Image source={require("../assets/images/restaurants/al-baik.jpg")} 

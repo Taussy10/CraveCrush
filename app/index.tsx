@@ -4,7 +4,7 @@ import { Redirect, router } from 'expo-router'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 const onBoarding = () => {
-  if (true) return  <Redirect href={"/cart"}/>
+  if (true) return  <Redirect href={"/home"}/>
 
 
   return (
